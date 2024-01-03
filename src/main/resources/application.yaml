@@ -1,1 +1,13 @@
+spring:
+  application:
+    name: contacts-service
 
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/contacts-service
+    username: postgres
+    password: This@PostG#21
