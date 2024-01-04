@@ -19,4 +19,10 @@ public class ContactsController {
         var contact = contactsService.getContactDetails(contactId);
         return ResponseEntity.ok(contact);
     }
+
+    @GetMapping("/overview/{contactId}")
+    public ResponseEntity<?> getContactOverviewDetails(@PathVariable String contactId){
+        var contact = contactsService.getContactOverviewDetails(contactId);
+        return ResponseEntity.ok(contact);
+    }
 }

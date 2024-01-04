@@ -8,8 +8,8 @@ import lombok.*;
 
 @Entity
 @Data
-@RequiredArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class Contact {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
